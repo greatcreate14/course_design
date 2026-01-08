@@ -1,8 +1,8 @@
 %!TEX program = xelatex
-\documentclass[a4paper]{ctexart} 
+\documentclass[a4paper, twoside]{ctexart} 
 
 % ==================== 导言区设置 ====================
-\usepackage[top=2.5cm, bottom=2.5cm, left=3cm, right=2.5cm]{geometry} 
+\usepackage[top=2.5cm, bottom=2.5cm, inner=3cm, outer=2.5cm]{geometry} 
 \usepackage{fontspec} 
 \usepackage{xeCJK} 
 \usepackage{amsmath, amssymb, amsthm} 
@@ -78,11 +78,13 @@
 % 页眉页脚设置
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\leftmark}
-\fancyhead[R]{\thepage}
+% RO: 奇数页右侧，LE: 偶数页左侧（即外侧打印页码）
+\fancyhead[RO, LE]{\thepage}
+% LO: 奇数页左侧，RE: 偶数页右侧（即内侧打印章节名）
+\fancyhead[LO, RE]{\leftmark}
+
 \renewcommand{\headrulewidth}{0.4pt}
 \fancyfoot[C]{}
-
 % 自定义命令
 
 \input{newcommand}
@@ -92,23 +94,23 @@
 
 % 1. 插入封面 PDF (假设文件名为 cover.pdf)
 % pages=1 表示只取第一页，如果是多页封面可以用 pages=-
-\includepdf[pages=1-2]{课设说明.pdf} 
+\includepdf[pages=1]{课设说明.pdf} 
+\includepdf[pages=2]{课设说明.pdf} 
 
 % 2. 生成目录 (会自动在新的一页，即第二页)
 \pagenumbering{gobble}
 \tableofcontents
-\newpage % 目录后换页，开始正文
+\cleardoublepage %确保正文从奇数页开始
 
 % 3. 导入各个部分
-% 建议将摘要也独立出来，或者直接放在这里
 
 \pagenumbering{arabic}
 
 % 导入各章节
 \input{chapter1} 
-\newpage
+\cleardoublepage % 修改这里
 \input{chapter2} 
-\newpage
+\cleardoublepage % 修改这里
 
 
 
