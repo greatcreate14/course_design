@@ -85,8 +85,14 @@
 
 \renewcommand{\headrulewidth}{0.4pt}
 \fancyfoot[C]{}
-% 自定义命令
 
+% 使自动插入的空白页不显示页眉页脚
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+  \hbox{}\thispagestyle{empty}\newpage\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+% 自定义命令
 \input{newcommand}
 
 % ==================== 正文区域 ====================
@@ -95,9 +101,11 @@
 % 1. 插入封面 PDF (假设文件名为 cover.pdf)
 % pages=1 表示只取第一页，如果是多页封面可以用 pages=-
 \includepdf[pages=1]{课设说明.pdf} 
+\cleardoublepage %封面单独打印
 \includepdf[pages=2]{课设说明.pdf} 
+\cleardoublepage  %课设任务页单独打印
 
-% 2. 生成目录 (会自动在新的一页，即第二页)
+% 2. 生成目录
 \pagenumbering{gobble}
 \tableofcontents
 \cleardoublepage %确保正文从奇数页开始
@@ -108,14 +116,14 @@
 
 % 导入各章节
 \input{chapter1} 
-\cleardoublepage % 修改这里
+\newpage
 \input{chapter2} 
-\cleardoublepage % 修改这里
 
 
 
 
-
+%最后一章不用\newpage
+\cleardoublepage %确保成绩评定表从奇数页开始
 \includepdf[pages=3]{课设说明.pdf} 
 
 \end{document}
