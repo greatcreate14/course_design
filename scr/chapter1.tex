@@ -1,0 +1,77 @@
+\section{设计资料}
+
+\subsection{地形}
+拟建建筑场地地势平坦，局部堆有建筑垃圾。
+
+\subsection{工程地质条件}
+自上而下土层依次如表\ref{tab:场地土层物理力学指标统计表}所示：
+\begin{table}[htbp]
+  \centering
+  \caption{场地土层物理力学指标统计表}
+  \label{tab:场地土层物理力学指标统计表}
+  \begin{tabular}{clclc}
+      \toprule
+      层号 & 土层名称 & 层厚 (m) & \multicolumn{1}{c}{状态描述} & $f_{ak}$ (kPa) \\
+      \midrule
+      \circled1 & 杂填土 & 2.0 & 稍湿，松散 & 95 \\
+      \circled2 & 淤泥质土 & 3.5 & 流塑 & 65 \\
+      \circled3 & 粉质粘土 & 5.0 & 稍密 & 130 \\
+      \circled4 & 粉质粘土 & 10.0 & 湿，可塑 & 200 \\
+      \circled5 & 粉质粘土混卵砾石 & 4.2 & - & 220 \\
+      \circled6 & 强风化泥质粉砂岩 & 10.0 & - & 300 \\
+      \circled7 & 中风化泥质粉砂岩 & 未揭穿 & - & 1000 \\
+      \bottomrule
+  \end{tabular}
+\end{table}
+
+
+\subsection{岩土设计技术参数}
+岩土设计参数如表\ref{tab:地基岩土物理力学参数}和表\ref{tab:桩的极限指标}所示：
+
+\begin{table}[htbp]
+  \centering
+  \caption{地基岩土物理力学参数}
+  \label{tab:地基岩土物理力学参数}
+  % 定义列格式：居中对齐，部分列宽微调以适应页面
+  \begin{tabular}{cccccccc}
+      \toprule
+      土层 & 土层 & 孔隙比 & 含水量 & 液性 & $\gamma$ & $C(\text{kPa})/$ & 压缩模量 \\
+      编号 & 名称 & $e$ & $W(\%)$ & 指数 $I_L$ & $(\text{kN}/\text{m}^3)$ & $\Phi(^\circ)$ & $E_s(\text{MPa})$ \\
+      \midrule
+      \circled{1}& 杂填土 & — & — & — & 19 & 20/10 & 5.0 \\
+      \circled{2} & 淤泥质土 & 1.04 & 62.4 & 1.08 & 17 & 8/5 & 3.8 \\
+      \circled{3} & 粉质粘土 & — & — & — & 20 & 38/16 & 5.81 \\
+      \circled{4} & 粉质黏土 & — & — & — & 19.7 & 42/17.4 & 8.18 \\
+      \circled{5} & \begin{tabular}{@{}c@{}}粉质粘土\\混卵砾石\end{tabular} & — & — & — & 20 & 50/20 & 9.0 \\
+      \circled{6} & \begin{tabular}{@{}c@{}}强风化泥\\质粉砂岩\end{tabular} & — & — & — & 20.5 & 20/35 & 15 \\
+      \circled{7} & \begin{tabular}{@{}c@{}}中风化泥\\质粉砂岩\end{tabular} & — & — & — & 21.5 & 200/40 & — \\
+      \bottomrule
+  \end{tabular}
+\end{table}
+\newpage
+
+\begin{table}[htbp]
+  \centering
+  \caption{桩的极限侧阻力标准值 $q_{sk}$ 和极限端阻力标准值 $q_{pk}$（单位：$\mathrm{kPa}$）}
+  \label{tab:桩的极限指标}
+  \begin{tabular}{ccccc}
+      \toprule
+      土层编号 & 土的名称 & 桩的侧阻力 $q_{sk}$ & 桩的端阻力 $q_{pk}$ & 抗拔系数 $\lambda$ \\
+      \midrule
+      \circled{1} & 素填土 & — & — & — \\
+      \circled{2} & 淤泥质土 & — & — & — \\
+      \circled{3} & 粉质粘土 & 27 & — & 0.71 \\
+      \circled{4} & 粉质粘土 & 38 & 1800 & 0.75 \\
+      \circled{5} & 粉质粘土混卵砾石 & 43 & 1800 & 0.75 \\
+      \circled{6} & 强风化泥质粉砂岩 & 60 & 3500 & 0.65 \\
+      \circled{7} & 中风化泥质粉砂岩 & — & — & 0.65 \\
+      \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{水文地质条件}
+\begin{enumerate}
+  \item[(1)] 拟建场区地下水对混凝土结构无腐蚀性。
+  \item[(2)] 地下水位深度：位于地表下3.5m。
+\end{enumerate}
+

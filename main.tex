@@ -1,0 +1,119 @@
+%!TEX program = xelatex
+\documentclass[a4paper]{ctexart} 
+
+% ==================== 导言区设置 ====================
+\usepackage[top=2.5cm, bottom=2.5cm, left=3cm, right=2.5cm]{geometry} 
+\usepackage{fontspec} 
+\usepackage{xeCJK} 
+\usepackage{amsmath, amssymb, amsthm} 
+\usepackage{graphicx} 
+\usepackage{booktabs} 
+\usepackage{multirow} 
+\usepackage{indentfirst} 
+\usepackage{listings} 
+\usepackage{xcolor} 
+\usepackage{hyperref} 
+\usepackage{fancyhdr}
+\usepackage{pdfpages} % <--- 新增：用于插入PDF封面
+\usepackage{enumitem} % 用于自定义列表样式
+\usepackage{pifont}
+\usepackage{booktabs} % 用于绘制专业的三线表
+\usepackage{array}    % 更好的列控制
+
+
+
+\makeatletter
+\def\input@path{{scr/}} % 这里的 scr/ 是你的文件夹名称
+\makeatother
+
+\graphicspath{{figures/}}
+
+% 设置超链接颜色
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black
+}
+
+\setlength{\headheight}{12.64723pt}
+
+% 设置章节标题格式
+\ctexset{
+  section={
+    format=\Large\bfseries\centering,
+    nameformat=\bfseries,
+    number=\chinese{section},
+    aftername={、},
+    beforeskip=1.5ex plus 0.2ex minus 0.2ex,
+    afterskip=1ex plus 0.1ex
+  },
+  subsection={
+    format=\large\bfseries,
+    nameformat=\bfseries,
+    number=\arabic{section}.\arabic{subsection},
+    aftername={\quad},
+    beforeskip=1.2ex plus 0.1ex minus 0.1ex,
+    afterskip=0.8ex plus 0.1ex
+  },
+  subsubsection={
+    number=\arabic{subsubsection},
+    aftername={. }
+  }
+}
+
+% 定理环境设置
+\newtheorem{theorem}{定理}[section]
+\newtheorem{lemma}[theorem]{引理}
+\newtheorem{definition}[theorem]{定义}
+\newtheorem{example}[theorem]{例}
+
+% 代码样式设置
+\lstset{
+  basicstyle=\small\ttfamily,
+  keywordstyle=\bfseries, 
+  commentstyle=\itshape, 
+  frame=none, 
+  numbers=none 
+}
+
+% 页眉页脚设置
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyfoot[C]{}
+
+% 自定义命令
+
+\input{newcommand}
+
+% ==================== 正文区域 ====================
+\begin{document}
+
+% 1. 插入封面 PDF (假设文件名为 cover.pdf)
+% pages=1 表示只取第一页，如果是多页封面可以用 pages=-
+\includepdf[pages=1-2]{课设说明.pdf} 
+
+% 2. 生成目录 (会自动在新的一页，即第二页)
+\pagenumbering{gobble}
+\tableofcontents
+\newpage % 目录后换页，开始正文
+
+% 3. 导入各个部分
+% 建议将摘要也独立出来，或者直接放在这里
+
+\pagenumbering{arabic}
+
+% 导入各章节
+\input{chapter1} 
+\newpage
+\input{chapter2} 
+\newpage
+
+
+
+
+
+\includepdf[pages=3]{课设说明.pdf} 
+
+\end{document}
