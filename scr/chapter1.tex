@@ -71,7 +71,58 @@
 
 \subsection{水文地质条件}
 \begin{enumerate}
-  \item[(1)] 拟建场区地下水对混凝土结构无腐蚀性。
-  \item[(2)] 地下水位深度：位于地表下3.5m。
+  \item[1.] 拟建场区地下水对混凝土结构无腐蚀性。
+  \item[2.] 地下水位深度：位于地表下3.5m。
 \end{enumerate}
 
+\subsection{场地条件}
+建筑物所处场地抗震设防烈度为7度，场地内无可液化砂土，粉土。
+
+\subsection{上部结构资料}
+拟建建筑物为六层钢筋混凝土结构，长30m，宽9.6m。室外地坪标高同自然地面，室内外高差450mm。柱截面尺寸均为400mm×400mm，横向承重，柱网布置如图\ref{fig:柱网布置图}所示。 
+\\
+\\
+\begin{figure}[htbp] % h:here, t:top, b:bottom, p:page
+  \centering
+  % 这里直接插入生成的 pdf 文件
+  % width=0.9\textwidth 表示图片宽度占文本宽度的 90%，自动缩放
+  \includegraphics[width=1\textwidth]{柱网布置图.pdf} 
+  
+  \caption{柱网布置图} % 图标题
+  \label{fig:柱网布置图} % 用于引用的标签
+\end{figure}
+
+\newpage
+
+\subsection{上部结构作用}
+
+上部结构作用在柱底的荷载效应标准组合值如表\ref{tab:柱底荷载效应标准组合值}所示，该表中弯矩$M_k$ 、水平力$V_k$均为横向方向。上部结构作用在柱底的荷载效应基本组合值如表\ref{tab:柱底荷载效应基本组合值}所示，该表中弯矩$M$、水平力$V$均为横向方向。
+
+\begin{table}[htbp]
+  \centering
+  \caption{柱底荷载效应标准组合值}
+  \label{tab:柱底荷载效应标准组合值}
+  \begin{tabular}{ccc}
+      \toprule
+      $F_k \, (\mathrm{kN})$ & $M_k\, (\mathrm{kN} \cdot \mathrm{m})$ & $V_k \, (\mathrm{kN})$ \\
+      \midrule
+      3728 & 277 & 200 \\
+      \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+  \centering
+  \caption{柱底荷载效应基本组合值}
+  \label{tab:柱底荷载效应基本组合值}
+  \begin{tabular}{ccc}
+      \toprule
+      $F_k \, (\mathrm{kN})$ & $M_k\, (\mathrm{kN} \cdot \mathrm{m})$ & $V_k \, (\mathrm{kN})$ \\
+      \midrule
+      34641 & 331 & 235 \\
+      \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{材料}
+混凝土强度等级为C30,钢筋采用HRB400级。

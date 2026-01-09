@@ -92,6 +92,16 @@
   \hbox{}\thispagestyle{empty}\newpage\if@twocolumn\hbox{}\newpage\fi\fi\fi}
 \makeatother
 
+% --- 图表按章节编号设置 ---
+% 使用 amsmath 提供的命令将图表编号与 section 绑定
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+
+% 如果你希望即使 section 使用中文数字（如“第一页”），图表依然显示阿拉伯数字（如“图1.1”）
+% 请取消下面两行的注释并使用它们：
+ \renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+ \renewcommand{\thetable}{\arabic{section}.\arabic{table}}
+
 % 自定义命令
 \input{newcommand}
 
