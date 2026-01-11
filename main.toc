@@ -7,7 +7,7 @@
 \contentsline {subsection}{\numberline {1.6}上部结构资料}{2}{subsection.1.6}%
 \contentsline {subsection}{\numberline {1.7}上部结构作用}{3}{subsection.1.7}%
 \contentsline {subsection}{\numberline {1.8}材料}{3}{subsection.1.8}%
-\contentsline {section}{\numberline {二}数学公式}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}行内公式}{4}{subsection.2.1}%
+\contentsline {section}{\numberline {二}桩基设计}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}桩基持力层和桩长}{4}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}行间公式}{4}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}多行公式}{4}{subsection.2.3}%

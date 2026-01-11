@@ -12,7 +12,7 @@
 \usepackage{indentfirst} 
 \usepackage{listings} 
 \usepackage{xcolor} 
-\usepackage{hyperref} 
+
 \usepackage{fancyhdr}
 \usepackage{pdfpages} % <--- 新增：用于插入PDF封面
 \usepackage{enumitem} % 用于自定义列表样式
@@ -20,7 +20,14 @@
 \usepackage{booktabs} % 用于绘制专业的三线表
 \usepackage{array}    % 更好的列控制
 
+% 参考文献使用 BibTeX + natbib 宏包
+% 顺序编码制
 
+\usepackage[sort]{natbib}
+
+\bibliographystyle{plain}
+
+\usepackage{hyperref} 
 
 \makeatletter
 \def\input@path{{scr/}} % 这里的 scr/ 是你的文件夹名称
@@ -31,7 +38,8 @@
 % 设置超链接颜色
 \hypersetup{
     colorlinks=true,
-    linkcolor=black
+    linkcolor=black,
+    citecolor=black
 }
 
 \setlength{\headheight}{12.64723pt}
@@ -128,9 +136,10 @@
 \input{chapter1} 
 \newpage
 \input{chapter2} 
+\newpage
 
-
-
+% 参考文献
+\bibliography{ref/refs}  % 参考文献使用 BibTeX 编译
 
 %最后一章不用\newpage
 \cleardoublepage %确保成绩评定表从奇数页开始
