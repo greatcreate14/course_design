@@ -12,7 +12,6 @@
 \usepackage{indentfirst} 
 \usepackage{listings} 
 \usepackage{xcolor} 
-
 \usepackage{fancyhdr}
 \usepackage{pdfpages} % <--- 新增：用于插入PDF封面
 \usepackage{enumitem} % 用于自定义列表样式
@@ -22,12 +21,10 @@
 
 % 参考文献使用 BibTeX + natbib 宏包
 % 顺序编码制
-
-\usepackage[sort]{natbib}
-
+\usepackage[numbers, sort&compress]{natbib}
 \bibliographystyle{plain}
 
-\usepackage{hyperref} 
+\usepackage{hyperref} %超链接
 
 \makeatletter
 \def\input@path{{scr/}} % 这里的 scr/ 是你的文件夹名称
@@ -139,6 +136,8 @@
 \newpage
 
 % 参考文献
+\addcontentsline{toc}{section}{参考文献} % 将参考文献加入目录
+\nocite{*} % .bib 文件里的所有条目都会出现在列表里
 \bibliography{ref/refs}  % 参考文献使用 BibTeX 编译
 
 %最后一章不用\newpage

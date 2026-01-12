@@ -9,5 +9,6 @@
 \contentsline {subsection}{\numberline {1.8}材料}{3}{subsection.1.8}%
 \contentsline {section}{\numberline {二}桩基设计}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}桩基持力层和桩长}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}行间公式}{4}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}多行公式}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.2}单桩竖向承载力的确定}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}确定桩数}{4}{subsection.2.3}%
+\contentsline {section}{参考文献}{5}{subsection.2.3}%

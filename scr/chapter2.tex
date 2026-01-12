@@ -2,15 +2,56 @@
 
 \subsection{桩基持力层和桩长}
 
-著名的欧拉公式 $e^{i\pi} + 1 = 0$ 被誉为数学中最美丽的公式。二次方程的求根公式为 $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$。
+根据《建筑桩基技术规范》(JGJ 94-2008) 第 3.3.3 条规定：应选择较硬土层作为桩端持力层。桩端全断面进入持力层的深度，对于黏性土、粉土不宜小于 $2d$，砂土不宜小于 $1.5d$，碎石类土不宜小于 $1d$。
 
-\subsection{行间公式}
+本设计选用第\circled{5}层粉质粘土混卵砾石作为桩端持力层。
+桩截面边长 $d = 500\text{mm}$。
+设计桩端进入持力层深度为：
+\begin{equation*}
+    3.0d =  3 \times 0.5=1.5 \text{m}
+\end{equation*}
 
-高斯积分：
-$$\int_{-\infty}^{\infty} e^{-x^2} \diff x = \sqrt{\pi}$$
+设地面标高为-0.45m，初步设计承台高1.0m，承台地面埋置深度标高-1.45m，根据《建筑桩基技术规范》(JGJ 94-2008) 第 4.2.4 条规定：桩嵌入承台内的长度对中等直径桩不宜小于50mm；对大直径桩不宜小于100mm。本设计桩顶伸入承台100mm。
 
-傅里叶变换：
-$$\hat{f}(\xi) = \int_{-\infty}^{\infty} f(x) e^{-2\pi i x \xi} \diff x$$
 
-\subsection{多行公式}
+由表\ref{tab:地基岩土物理力学参数}场地地质条件可知各个土层的厚度，故桩基有效桩长$l$为：
+\begin{equation*}
+    l = 2+3.5+5+10+1.5-1 =21 \text{m}
+\end{equation*}
 
+\subsection{单桩竖向承载力的确定}
+
+由表\ref{tab:桩的极限指标}可知桩的极限侧阻力标准值 $q_{sk}$ 和极限端阻力标准值 $q_{pk}$
+根据规范经验公式，其单桩竖向承载力计算公式为：
+\begin{equation*}
+    Q_{uk}=Q_{sk}+Q_{pk}=u\Sigma q_{sik} l_i + q_{pk} A_p
+\end{equation*}
+桩身周长：
+\begin{equation*}
+    u=4\times 0.5 = 2 \text{m}
+\end{equation*}
+桩截面积：
+\begin{equation*}
+    A_p = 0.5 \times 0.5 = 0.25 \text{m}^2
+\end{equation*}
+则：
+\begin{equation*}
+    \begin{aligned}
+        Q_{sk}  &= u\Sigma q_{sik} l_i = 2.0 \times (27 \times 5 + 38 \times 10 + 43 \times 1.5) = 1159 \text{ kN}\\
+    Q_{pk} &= q_{pk} A_p = 1800 \times 0.25 = 450 \text{ kN} \\
+    Q_{uk} &= Q_{sk} + Q_{pk} = 1159 + 450 = 1609 \text{ kN}
+    \end{aligned}
+\end{equation*}
+\\
+不考虑群桩效应，估算单桩竖向承载力设计值 $R_a$ 为：
+\begin{equation*}
+    R_a = \frac{Q_{uk}}{K} = \frac{1609}{2} =804.5 \text{ kN}
+\end{equation*}
+
+\subsection{确定桩数}  
+根据《建筑桩基技术规范》(JGJ 94-2008) 第 5.1.1 条，单桩竖向力计算需考虑承台及覆土自重 $G_k$。因承台尺寸尚未确定，暂按上部结构荷载的 15\% 估算 $G_k$（即 $G_k = 0.15 F_k$），则初估桩数公式为：
+$$n \ge \frac{1.15 F_k}{R_a} $$
+
+则:
+$$n \ge \frac{1.15 F_k}{R_a} = \frac{1.15 \times 3728}{804.5} = 5.3$$
+桩取6根。
