@@ -8,7 +8,13 @@
 \contentsline {subsection}{\numberline {1.7}上部结构作用}{3}{subsection.1.7}%
 \contentsline {subsection}{\numberline {1.8}材料}{3}{subsection.1.8}%
 \contentsline {section}{\numberline {二}桩基设计}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}桩基持力层和桩长}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}单桩竖向承载力的确定}{4}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}确定桩数}{4}{subsection.2.3}%
-\contentsline {section}{参考文献}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.1}桩基持力层的选取}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}桩的选型与尺寸}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}单桩竖向承载力的确定}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}确定桩数}{4}{subsection.2.4}%
+\contentsline {section}{\numberline {三}桩基础设计}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}确定承台尺寸}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}单桩竖向承载力验算}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}单桩水平承载力验算}{6}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}承台抗弯计算和配筋设计}{6}{subsection.3.4}%
+\contentsline {section}{参考文献}{7}{subsection.3.4}%

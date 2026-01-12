@@ -1,0 +1,108 @@
+\section{桩基础设计}
+
+\subsection{确定承台尺寸}
+桩数为6根，选用矩形承台，桩排布为2行3列。
+
+
+根据《建筑桩基技术规范》(JGJ 94-2008) 第 3.3.3 条的表 3.3.3-1 、第 4.2.1 条、第 4.2.3 条和第 4.2.4 条规定： 
+
+
+独立柱下桩基承台的最小宽度不应小于500mm，边桩中心至承台边缘的距离不应小于桩的直径或边长，且桩的外边缘至承台边缘的距离不应小于150mm。对于墙下条形承台梁，桩的外边缘至承台梁边缘的距离不应小于75mm。承台的最小厚度不应小于300mm。 
+
+
+承台底面钢筋的混凝土保护层厚度，当有混凝土垫层时，不应小于 50mm，无垫层时不应小于70mm；此外尚不应小于桩头嵌入承台内的长度。 
+
+
+桩嵌入承台内的长度对中等直径桩不宜小于50mm；对大直径桩不宜小于100mm。
+\\
+本设计桩中心距：$$s = 4d = 4 \times 0.5 = 2 \text{ m}$$
+边桩中心至承台边缘的距离取0.5m，承台底面钢筋的混凝土保护层厚度取70mm，桩顶嵌入承台长度取100mm，
+\\则承台的长边长：$$ a = 2 \times 0.5 + 2 \times 2 = 5 \text{ m}$$
+承台短边长： $$
+    b  = 2 \times 0.5 + 2 = 3 \text{ m}
+$$
+承台有效高度： $$
+    h_0 = 1-0.07 = 0.93 \text{ m}
+$$
+
+\subsection{单桩竖向承载力验算}
+
+根据《建筑桩基技术规范》(JGJ 94-2008) ，当按单桩承载力特征值进行计算时，荷载效应取其效应的标准组合值。由于桩基所处场地内无可液化沙土，粉土问题，因此可不进行地震效应的竖向承载力验算。
+\\
+承台及其上填土的总重为：
+$$
+    G_k = 20 \times 5 \times 3 \times 1 = 300 \text{ kN}
+$$
+
+计算时取表\ref{tab:柱底荷载效应标准组合值}荷载的标准组合\\
+则基桩平均竖向力 $Q_k$：
+$$
+    Q_k = \frac{F_k + G_k}{n} = \frac{3728 + 300}{6} = 671.33 \text{ kN}
+$$
+基桩最大竖向力 $Q_{kmax}$：
+\begin{equation*} 
+    \begin{aligned} 
+        Q_{kmax} &= \frac{F_k + G_k}{n} + \frac{(M_k + V_k h) y_{max}}{\sum y_i^2} \\ 
+        &= 671.33 + \frac{(277 + 200 \times 1.0) \times 2.0}{16} \\ 
+        &= 730.96 \text{ kN} 
+    \end{aligned} 
+\end{equation*}
+基桩最小竖向力 $Q_{kmin}$：
+\begin{equation*} 
+    \begin{aligned} 
+        Q_{kmin} &= \frac{F_k + G_k}{n} - \frac{(M_k + V_k h) y_{max}}{\sum y_i^2} \\ 
+        &= 671.33 - \frac{(277 + 200 \times 1.0) \times 2.0}{16} \\ 
+        &= 611.71 \text{ kN} 
+    \end{aligned} 
+\end{equation*}
+
+因此
+$$
+Q_k<R_a
+$$
+$$
+Q_{kmax}< 1.2R_a 
+$$
+$$
+Q_{kmin}> 0
+$$
+
+满足设计要求，故设计是合理的。
+
+\subsection{单桩水平承载力验算}
+根据表\ref{tab:柱底荷载效应标准组合值}荷载的标准组合水平力$V_k$计算
+\\
+单桩水平力：
+$$
+H_{ik} = \frac{V_k}{n} = \frac{200}{6} = 33.33 \text{ kN}
+$$
+
+\subsection{承台抗弯计算和配筋设计}
+
+承台内力计算荷载采用荷载效应基本组合设计值
+\\
+则基桩平均竖向力 $N$ ：
+\begin{equation*}
+    \begin{aligned}
+        N = \frac{F}{n} = \frac{4641}{6} = 773.5 \text{ kN}
+    \end{aligned}
+\end{equation*}
+
+基桩最大竖向力 $N_{max}$ ：
+\begin{equation*}
+\begin{aligned}
+N_{max} &= \frac{F}{n} + \frac{(M + V h) y_{max}}{\sum y_i^2} \\
+&= 773.5 + \frac{(331 + 235 \times 1.0) \times 2.0}{16} \\
+&= 773.5 + 70.75 \\
+&= 844.25 \text{ kN}
+\end{aligned}
+\end{equation*}
+
+基桩最小竖向力 $N_{min}$ ：
+\begin{equation*}
+\begin{aligned}
+N_{min} &= \frac{F}{n} - \frac{(M + V h) y_{max}}{\sum y_i^2} \\
+&= 773.5 - 70.75 \\
+&= 702.75 \text{ kN}
+\end{aligned}
+\end{equation*}
