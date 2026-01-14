@@ -11,20 +11,20 @@
 
 
 混凝土预制桩的截面有方、圆等各种形状，普通实心方桩的截面边长一般为300~500mm。
-\\
-本设计选用混凝土预制方桩，桩截面边长取 $d = 500\text{mm}$
 
-设计桩端进入持力层深度为：
-\begin{equation*}
-    3.0d =  3 \times 0.5=1.5 \text{ m}
-\end{equation*}
 
-设地面标高为-0.45m，初步设计承台底面埋置深度标高-1.45m，
+
+本设计选用混凝土预制方桩，桩截面边长取 $d = 450\text{ mm}$
+
+
+设计桩端进入持力层深度为：3.5 m
+
+设地面标高为0m，初步设计承台底面埋置深度标高-1.7m，
 
 
 由表\ref{tab:地基岩土物理力学参数}场地地质条件可知各个土层的厚度，故桩基有效桩长$l$为：
 \begin{equation*}
-    l = 2+3.5+5+10+1.5-1 =21 \text{ m}
+    l = 2+3.5+5+10+3.5-1.7 = 22.3 \text{ m}
 \end{equation*}
 
 \subsection{单桩竖向承载力的确定}
@@ -36,24 +36,24 @@
 \end{equation*}
 桩身周长：
 \begin{equation*}
-    u=4\times 0.5 = 2 \text{ m}
+    u=4\times 0.45 = 1.8 \text{ m}
 \end{equation*}
 桩截面积：
 \begin{equation*}
-    A_p = 0.5 \times 0.5 = 0.25 \text{ m}^2
+    A_p = 0.45 \times 0.45 = 0.2025 \text{ m}^2
 \end{equation*}
 则：
 \begin{equation*}
     \begin{aligned}
-        Q_{sk}  &= u\Sigma q_{sik} l_i = 2.0 \times (27 \times 5 + 38 \times 10 + 43 \times 1.5) = 1159 \text{ kN}\\
-    Q_{pk} &= q_{pk} A_p = 1800 \times 0.25 = 450 \text{ kN} \\
-    Q_{uk} &= Q_{sk} + Q_{pk} = 1159 + 450 = 1609 \text{ kN}
+        Q_{sk}  &= u\Sigma q_{sik} l_i = 1.8 \times (27 \times 5 + 38 \times 10 + 43 \times 3.5) = 1197.9 \text{ kN}\\
+    Q_{pk} &= q_{pk} A_p = 1800 \times 0.2025 = 364.5 \text{ kN} \\
+    Q_{uk} &= Q_{sk} + Q_{pk} = 1197.9 + 364.5 = 1562.4 \text{ kN}
     \end{aligned}
 \end{equation*}
 \\
 不考虑群桩效应，估算单桩竖向承载力设计值 $R_a$ 为：
 \begin{equation*}
-    R_a = \frac{Q_{uk}}{K} = \frac{1609}{2} =804.5 \text{ kN}
+    R_a = \frac{Q_{uk}}{K} = \frac{1562.4}{2} =781.2 \text{ kN}
 \end{equation*}
 
 \subsection{确定桩数}  
@@ -61,7 +61,7 @@
 $$n \ge \frac{1.15 F_k}{R_a} $$
 
 则:
-$$n \ge \frac{1.15 F_k}{R_a} = \frac{1.15 \times 3728}{804.5} = 5.3$$
+$$n \ge \frac{1.15 F_k}{R_a} = \frac{1.15 \times 3728}{781.2} = 5.49$$
 桩取6根。
 
 

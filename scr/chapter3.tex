@@ -15,14 +15,14 @@
 
 桩嵌入承台内的长度对中等直径桩不宜小于50mm；对大直径桩不宜小于100mm。
 \\
-本设计桩中心距：$$s = 4d = 4 \times 0.5 = 2 \text{ m}$$
-边桩中心至承台边缘的距离取0.5m，承台底面钢筋的混凝土保护层厚度取70mm，桩顶嵌入承台长度取100mm，
-\\则承台的长边长：$$ a = 2 \times 0.5 + 2 \times 2 = 5 \text{ m}$$
+本设计桩中心距：$$s = 4d = 4 \times 0.45 = 1.8 \text{ m}$$
+边桩中心至承台边缘的距离取0.45m，承台底面钢筋的混凝土保护层厚度取70mm，桩顶嵌入承台长度取100mm，设承台高$h = 1.5 \text{m}$，
+\\则承台的长边长：$$ a = 2 \times 0.45 + 2 \times 1.8 = 4.5 \text{ m}$$
 承台短边长： $$
-    b  = 2 \times 0.5 + 2 = 3 \text{ m}
+    b  = 2 \times 0.45 + 1.8 = 2.7 \text{ m}
 $$
 承台有效高度： $$
-    h_0 = 1-0.07 = 0.93 \text{ m}
+    h_0 = 1.5-0.07 = 1.43 \text{ m}
 $$
 
 \subsection{单桩竖向承载力验算}
@@ -31,28 +31,28 @@ $$
 \\
 承台及其上填土的总重为：
 $$
-    G_k = 20 \times 5 \times 3 \times 1 = 300 \text{ kN}
+    G_k = 20 \times 4.5 \times 2.7 \times 1.7 = 413.1 \text{ kN}
 $$
 
 计算时取表\ref{tab:柱底荷载效应标准组合值}荷载的标准组合\\
 则基桩平均竖向力 $Q_k$：
 $$
-    Q_k = \frac{F_k + G_k}{n} = \frac{3728 + 300}{6} = 671.33 \text{ kN}
+    Q_k = \frac{F_k + G_k}{n} = \frac{3728 + 413.1}{6} = 690.18 \text{ kN}
 $$
 基桩最大竖向力 $Q_{kmax}$：
 \begin{equation*} 
     \begin{aligned} 
         Q_{kmax} &= \frac{F_k + G_k}{n} + \frac{(M_k + V_k h) y_{max}}{\sum y_i^2} \\ 
-        &= 671.33 + \frac{(277 + 200 \times 1.0) \times 2.0}{16} \\ 
-        &= 730.96 \text{ kN} 
+        &= 690.18 + \frac{(277 + 200 \times 1.5) \times 2.0}{16} \\ 
+        &= 770.32 \text{ kN} 
     \end{aligned} 
 \end{equation*}
 基桩最小竖向力 $Q_{kmin}$：
 \begin{equation*} 
     \begin{aligned} 
         Q_{kmin} &= \frac{F_k + G_k}{n} - \frac{(M_k + V_k h) y_{max}}{\sum y_i^2} \\ 
-        &= 671.33 - \frac{(277 + 200 \times 1.0) \times 2.0}{16} \\ 
-        &= 611.71 \text{ kN} 
+        &= 690.18 - \frac{(277 + 200 \times 1.5) \times 2.0}{16} \\ 
+        &= 610.04 \text{ kN} 
     \end{aligned} 
 \end{equation*}
 
@@ -92,9 +92,9 @@ $$
 \begin{equation*}
 \begin{aligned}
 N_{max} &= \frac{F}{n} + \frac{(M + V h) y_{max}}{\sum y_i^2} \\
-&= 773.5 + \frac{(331 + 235 \times 1.0) \times 2.0}{16} \\
-&= 773.5 + 70.75 \\
-&= 844.25 \text{ kN}
+&= 773.5 + \frac{(331 + 235 \times 1.5) \times 1.8}{12.96} \\
+&= 773.5 + 94.93 \\
+&= 868.43 \text{ kN}
 \end{aligned}
 \end{equation*}
 
@@ -102,7 +102,7 @@ N_{max} &= \frac{F}{n} + \frac{(M + V h) y_{max}}{\sum y_i^2} \\
 \begin{equation*}
 \begin{aligned}
 N_{min} &= \frac{F}{n} - \frac{(M + V h) y_{max}}{\sum y_i^2} \\
-&= 773.5 - 70.75 \\
-&= 702.75 \text{ kN}
+&= 773.5 - 94.93 \\
+&= 678.57 \text{ kN}
 \end{aligned}
 \end{equation*}
