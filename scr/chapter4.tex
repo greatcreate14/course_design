@@ -1,0 +1,33 @@
+\section{单桩承载力特征值}
+
+\subsection{单桩竖向承载力特征值的确定}
+
+由表\ref{tab:桩的极限指标}可知桩的极限侧阻力标准值 $q_{sk}$ 和极限端阻力标准值 $q_{pk}$
+根据规范经验公式，其单桩竖向承载力计算公式为：
+\begin{equation*}
+    Q_{uk}=Q_{sk}+Q_{pk}=u\Sigma q_{sik} l_i + q_{pk} A_p
+\end{equation*}
+桩身周长：
+\begin{equation*}
+    u=4\times 0.45 = 1.8 \text{ m}
+\end{equation*}
+桩截面积：
+\begin{equation*}
+    A_p = 0.45 \times 0.45 = 0.2025 \text{ m}^2
+\end{equation*}
+则：
+\begin{equation*}
+    \begin{aligned}
+        Q_{sk}  &= u\Sigma q_{sik} l_i = 1.8 \times (27 \times 5 + 38 \times 10 + 43 \times 3.5) = 1197.9 \text{ kN}\\
+    Q_{pk} &= q_{pk} A_p = 1800 \times 0.2025 = 364.5 \text{ kN} \\
+    Q_{uk} &= Q_{sk} + Q_{pk} = 1197.9 + 364.5 = 1562.4 \text{ kN}
+    \end{aligned}
+\end{equation*}
+\\
+不考虑群桩效应，估算单桩竖向承载力特征值值 $R_a$ 为：
+\begin{equation*}
+    R_a = \frac{Q_{uk}}{K} = \frac{1562.4}{2} =781.2 \text{ kN}
+\end{equation*}
+
+\subsection{单桩水平承载力特征值的确定}
+

@@ -1,0 +1,54 @@
+\section{单桩承载力验算}
+
+\subsection{单桩竖向承载力验算}
+
+根据《建筑桩基技术规范》(JGJ 94-2008) ，当按单桩承载力特征值进行计算时，荷载效应取其效应的标准组合值。由于桩基所处场地内无可液化沙土，粉土问题，因此可不进行地震效应的竖向承载力验算。
+\\
+承台及其上填土的总重为：
+$$
+    G_k = 20 \times 4.5 \times 2.7 \times 1.7 = 413.1 \text{ kN}
+$$
+
+计算时取表\ref{tab:柱底荷载效应标准组合值}荷载的标准组合\\
+则基桩平均竖向力 $Q_k$：
+$$
+    Q_k = \frac{F_k + G_k}{n} = \frac{3728 + 413.1}{6} = 690.18 \text{ kN}
+$$
+基桩最大竖向力 $Q_{kmax}$：
+\begin{equation*} 
+    \begin{aligned} 
+        Q_{kmax} &= \frac{F_k + G_k}{n} + \frac{(M_k + V_k h) y_{max}}{\sum y_i^2} \\ 
+        &= 690.18 + \frac{(277 + 200 \times 1.5) \times 2.0}{16} \\ 
+        &= 770.32 \text{ kN} 
+    \end{aligned} 
+\end{equation*}
+基桩最小竖向力 $Q_{kmin}$：
+\begin{equation*} 
+    \begin{aligned} 
+        Q_{kmin} &= \frac{F_k + G_k}{n} - \frac{(M_k + V_k h) y_{max}}{\sum y_i^2} \\ 
+        &= 690.18 - \frac{(277 + 200 \times 1.5) \times 2.0}{16} \\ 
+        &= 610.04 \text{ kN} 
+    \end{aligned} 
+\end{equation*}
+
+因此
+$$
+Q_k<R_a
+$$
+$$
+Q_{kmax}< 1.2R_a 
+$$
+$$
+Q_{kmin}> 0
+$$
+
+满足设计要求，故设计是合理的。
+
+\subsection{单桩水平承载力验算}
+根据表\ref{tab:柱底荷载效应标准组合值}荷载的标准组合水平力$V_k$计算
+\\
+单桩水平力：
+$$
+H_{ik} = \frac{V_k}{n} = \frac{200}{6} = 33.33 \text{ kN}
+$$
+

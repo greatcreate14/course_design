@@ -119,7 +119,8 @@
 \cleardoublepage %封面单独打印
 \includepdf[pages=2]{课设说明.pdf} 
 \cleardoublepage  %课设任务页单独打印
-
+\includepdf[pages=3]{课设说明.pdf} 
+\cleardoublepage %确保成绩评定表从奇数页开始
 % 2. 生成目录
 \pagenumbering{gobble}
 \tableofcontents
@@ -136,14 +137,21 @@
 \newpage
 \input{chapter3} 
 \newpage
+\input{chapter4} 
+\newpage
+\input{chapter5} 
+\newpage
+\input{chapter6} 
+\newpage
+\input{chapter7} 
+\newpage
+
 
 % 参考文献
 \addcontentsline{toc}{section}{参考文献} % 将参考文献加入目录
 \nocite{*} % .bib 文件里的所有条目都会出现在列表里
 \bibliography{ref/refs}  % 参考文献使用 BibTeX 编译
 
-%最后一章不用\newpage
-\cleardoublepage %确保成绩评定表从奇数页开始
-\includepdf[pages=3]{课设说明.pdf} 
+
 
 \end{document}

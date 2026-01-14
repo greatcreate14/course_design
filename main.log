@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.1.5)  14 JAN 2026 14:06
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.1.5)  14 JAN 2026 16:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -752,6 +752,27 @@ File: figures/课设说明.pdf Graphic file (type pdf)
 
 [4
 
+]
+File: figures/课设说明.pdf Graphic file (type pdf)
+<use figures/课设说明.pdf>
+File: figures/课设说明.pdf Graphic file (type pdf)
+<use figures/课设说明.pdf, page 3>
+File: figures/课设说明.pdf Graphic file (type pdf)
+<use figures/课设说明.pdf, page 3>
+File: figures/课设说明.pdf Graphic file (type pdf)
+<use figures/课设说明.pdf, page 3>
+File: figures/课设说明.pdf Graphic file (type pdf)
+<use figures/课设说明.pdf, page 3>
+
+
+File: figures/课设说明.pdf Graphic file (type pdf)
+<use figures/课设说明.pdf, page 3>
+[5
+
+]
+
+[6
+
 ] (./main.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
  (d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -772,57 +793,40 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] (./scr/chapter1.tex
 
-[1]
+[1])
+
+[2] (./scr/chapter2.tex
 File: figures/柱网布置图.pdf Graphic file (type pdf)
 <use figures/柱网布置图.pdf>
+)
 
+[3] (./scr/chapter3.tex)
 
-[2])
+[4] (./scr/chapter4.tex)
 
-[3] (./scr/chapter2.tex)
+[5] (./scr/chapter5.tex)
 
-[4] (./scr/chapter3.tex
+[6] (./scr/chapter6.tex)
 
-[5])
+[7] (./scr/chapter7.tex)
 
-[6] (./main.bbl)
+[8] (./main.bbl)
 
-[7]
-
-[8
-
-]
-File: figures/课设说明.pdf Graphic file (type pdf)
-<use figures/课设说明.pdf>
-File: figures/课设说明.pdf Graphic file (type pdf)
-<use figures/课设说明.pdf, page 3>
-File: figures/课设说明.pdf Graphic file (type pdf)
-<use figures/课设说明.pdf, page 3>
-File: figures/课设说明.pdf Graphic file (type pdf)
-<use figures/课设说明.pdf, page 3>
-File: figures/课设说明.pdf Graphic file (type pdf)
-<use figures/课设说明.pdf, page 3>
-
-
-File: figures/课设说明.pdf Graphic file (type pdf)
-<use figures/课设说明.pdf, page 3>
-[9
-
-] (./main.aux)
+[9] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/08/05>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BCFD26F4FD0B367C10B9319277FA187D;2068.
+(rerunfilecheck)             Checksum: EFC7CBBE4E2BDA9D33C3726B77C725DF;2720.
  ) 
 Here is how much of TeX's memory you used:
- 19913 strings out of 473832
- 416458 string characters out of 5723979
- 836803 words of memory out of 5000000
- 42660 multiletter control sequences out of 15000+600000
+ 19956 strings out of 473832
+ 417310 string characters out of 5723979
+ 838584 words of memory out of 5000000
+ 42691 multiletter control sequences out of 15000+600000
  564576 words of font info for 79 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,17n,111p,1206b,482s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (15 pages).
+Output written on main.pdf (17 pages).
